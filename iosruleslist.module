@@ -1,4 +1,4 @@
-#!name=Apple Intelligence / Siri / Relay Rules
+#!name=Apple Rules
 #!desc=强奸Apple
 [Rule]
 DOMAIN,guzzoni.apple.com,PROXY
@@ -6,7 +6,7 @@ DOMAIN,mask-api.fe.apple-dns.net,PROXY
 DOMAIN,mask-api.icloud.com,PROXY
 DOMAIN,mask-t.apple-dns.net,PROXY
 DOMAIN,mask.apple-dns.net,PROXY
-DOMAIN-SUFFIX,smoot.apple.com,PROXY
+DOMAIN-SUFFIX,*.smoot.apple.com,PROXY
 DOMAIN-SUFFIX,apple-relay.apple.com,PROXY
 DOMAIN-SUFFIX,apple-relay.cloudflare.com,PROXY
 DOMAIN-SUFFIX,apple-relay.fastly-edge.com,PROXY
