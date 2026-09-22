@@ -28,7 +28,7 @@ DOMAIN,probe.icloud.com,PROXY
 DOMAIN,metrics.icloud.com,PROXY
 # 6. 补充
 DOMAIN,mask.apple-dns.net,PROXY
-DOMAIN-SUFFIX,ls.apple.com,PROXY
+# DOMAIN-SUFFIX,ls.apple.com,PROXY # 这个好像管的有点宽，先杀了
 DOMAIN-SUFFIX,mask-h2.icloud.com,PROXY
 DOMAIN-SUFFIX,mask.icloud.com,PROXY
 DOMAIN-SUFFIX,apps.mzstatic.com,PROXY
