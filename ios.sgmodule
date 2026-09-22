@@ -1,0 +1,39 @@
+#!name=iOS Rules
+#!desc=Apple Intelligence / 新 Siri 分流规则（iOS 27）
+[Rule]
+# 1. Siri 核心（语音识别 + 搜索）
+DOMAIN,guzzoni.apple.com,PROXY
+DOMAIN-SUFFIX,smoot.apple.com,PROXY
+DOMAIN,api-siri-prod.apple.com,PROXY
+DOMAIN,seed.siri.apple.com,PROXY
+# 2. Private Cloud Compute（核心计算）
+DOMAIN-SUFFIX,apple-relay.apple.com,PROXY
+DOMAIN-SUFFIX,apple-relay.cloudflare.com,PROXY
+DOMAIN-SUFFIX,apple-relay.fastly-edge.com,PROXY
+DOMAIN-SUFFIX,cp4.cloudflare.com,PROXY
+# 3. Relay / Bootstrap（入口与解析）
+DOMAIN-SUFFIX,apple-relay.mask.apple-dns.net,PROXY
+DOMAIN,mask-api.icloud.com,PROXY
+DOMAIN,mask-api.fe.apple-dns.net,PROXY
+DOMAIN,mask-api.fe2.apple-dns.net,PROXY
+DOMAIN,mask-api.icloud.com,PROXY
+DOMAIN,mask-t.apple-dns.net,PROXY
+DOMAIN,apple-relay.akamaized.net,PROXY
+DOMAIN,apple-carry-relay.cloudflare.com,PROXY
+# 4. 区域判定（关键）
+DOMAIN-SUFFIX,gspe1-ssl.ls.apple.com,PROXY
+# 5. iCloud 辅助（优先级较低）
+DOMAIN-SUFFIX,gateway.icloud.com,PROXY
+DOMAIN,probe.icloud.com,PROXY
+DOMAIN,metrics.icloud.com,PROXY
+# 6. 补充
+DOMAIN,mask.apple-dns.net,PROXY
+DOMAIN-SUFFIX,ls.apple.com,PROXY
+DOMAIN-SUFFIX,mask-h2.icloud.com,PROXY
+DOMAIN-SUFFIX,mask.icloud.com,PROXY
+DOMAIN-SUFFIX,apps.mzstatic.com,PROXY
+DOMAIN-SUFFIX,push.apple.com,PROXY
+DOMAIN-SUFFIX,gateway.push.apple.com,PROXY
+DOMAIN-SUFFIX,api.push.apple.com,PROXY
+DOMAIN-SUFFIX,sandbox.push.apple.com,PROXY
+DOMAIN-KEYWORD,siri,PROXY
